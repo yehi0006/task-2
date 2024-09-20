@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff; /* White text for contrast */
+  }
+  
+  a:hover {
+    opacity: 0.9;
+  }
+  
+  /* Header Styling */
+  .siteheader {
+    background-color: transparent; /* No background */
+    text-align: left; /* Align the heading to the left */
+    padding: 20px;
+    color: #333; /* Make the heading black */
+  }
+  
+  .siteheader h1 {
+    margin: 0;
+    font-size: 2em; /* Adjust heading size */
+  }
+  
+  /* Main Content Styles */
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  /* Layout for Emoji Boxes */
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes in a row */
+    gap: 20px; /* Space between the boxes */
+  }
+  
+  .emoji {
+    background-color: #fff;
+    border: 2px solid #000; /* Black borders around the boxes */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .emoji:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Emoji Icon Styling - Centered Above Text */
+  .icon {
+    font-size: 50px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  /* Titles in Black */
+  .emoji h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000; /* Titles are now black */
+  }
+  
+  .emoji p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Bigger Purple Box Styling for "Read More" Links */
+  .emoji a {
+    display: inline-block;
+    background-color: #800080; /* Purple background */
+    padding: 15px 20px; /* Bigger box with more padding */
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    font-size: 1.1em; /* Bigger text */
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #000; /* Black border around the link boxes */
+    width: 100%; /* Make the box full-width for balance */
+    box-sizing: border-box; /* Ensures padding doesn't affect size */
+  }
+  
+  .emoji a:hover {
+    background-color: #5a005a; /* Darker purple on hover */
+  }
+  
+  /* Media Query for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .emojis {
+      grid-template-columns: 1fr; /* Stack the boxes vertically on smaller screens */
+    }
+  }
+
+  
